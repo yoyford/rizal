@@ -1,0 +1,43 @@
+.about_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%; 
+    margin-top: 50px;
+    margin: 90px auto; 
+    text-align: center;
+}
+.about_title{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+.about_title_2{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+
+}
+.about_content{
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+.about_contributors{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+.con{
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+    .about_section {
+        width: 80%; 
+    }
+    .about_section p{
+        font-size: 13px;
+    }
+}

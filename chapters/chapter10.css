@@ -1,0 +1,203 @@
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #363636;
+}
+.dark-mode{
+    --primary-color: #363636;
+    --secondary-color: #fff;
+
+}
+.navbar a {
+    text-decoration: none;
+}
+.selector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+
+}
+#manga-chapters {
+    width: 150px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+body {
+    scroll-behavior: smooth;
+}
+.switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #fad91d;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #007bff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.h3_intro{
+    color: var(--secondary-color);
+    text-align: center;
+}
+.chapter10_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto; 
+    margin-top: 40px; 
+    max-width: 1200px;
+    font-family: 'Poppins', sans-serif;
+}
+.content_container{
+    flex: 1 1 60%;
+    padding-right: 20px;
+    margin: 20px; 
+}
+.bold2{
+    font-weight: bold;
+    font-style: italic;
+}
+.rizals_1{
+    width: 40%;
+}
+.image {
+    flex: 1 1 30%;
+    text-align: right;
+    margin: 20px;  
+    text-align: center;
+}
+.mid{
+    text-align: center;
+}
+.image img {
+    max-width: 70%;
+    height: auto;
+}
+.bold{
+    font-weight: bolder;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.young{
+    font-style: italic;
+    text-align: center;
+}
+a.chapter-button {
+    background-color: #f8f9fa;
+    border: 2px solid #6c757d;
+    color: #6c757d;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none; 
+    display: inline-block;  
+}
+
+a.chapter-button:hover {
+    background-color: #000000;
+    color: #f8f9fa;
+}
+.fellow{
+    text-align: center;
+}
+
+a.chapter-button.past {
+    border-color: #000000;
+    color: #000000;
+}
+
+a.chapter-button.past:hover {
+    background-color: #000000;
+    color: #f8f9fa;
+}
+
+a.chapter-button.next {
+    border-color: #000000;
+    color: #000000;
+}
+
+a.chapter-button.next:hover {
+    background-color: #000000;
+    color: #f8f9fa;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content_container, .image {
+        flex: 1 1 100%;
+        margin: 20px 0;  
+    }
+    .content_container{
+        margin: 0 17px;
+    }
+
+    .content_container {
+        padding-right: 0;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
